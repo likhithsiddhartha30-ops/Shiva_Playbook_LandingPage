@@ -196,9 +196,8 @@ h2 .hl{
   border:1px solid rgba(255,255,255,.12);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 50px 90px -50px #000;
 }
-.photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.85);transition:filter .8s var(--ease),transform 1.2s var(--ease)}
-.photo:hover img{filter:grayscale(.35) contrast(1.04) brightness(.92);transform:scale(1.03)}
-.photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 50%,rgba(8,8,8,.6))}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.photo:hover img{transform:scale(1.03)}
 /* if an image can't load, the frame stays a clean glass panel instead of a broken icon */
 .photo.broken img{visibility:hidden}
 
@@ -252,7 +251,7 @@ section{padding:120px 0;position:relative}
 }
 .kicker i{width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff}
 .hero h1{
-  margin:28px auto 26px;font-size:clamp(42px,8.4vw,104px);line-height:.98;letter-spacing:-.045em;
+  margin:28px auto 26px;max-width:960px;font-size:clamp(38px,6.6vw,82px);line-height:1.02;letter-spacing:-.045em;
   font-weight:800;color:#fff;
 }
 .hero h1 em{
@@ -343,15 +342,14 @@ section{padding:120px 0;position:relative}
 
 /* ---------- the programme : bento ---------- */
 .head{max-width:720px;margin:0 auto 56px;text-align:center}
-.head .label::after{content:"";width:26px;height:1px;background:linear-gradient(270deg,rgba(255,255,255,.7),transparent)}
+.head .label::after,.label.center::after{content:"";width:26px;height:1px;background:linear-gradient(270deg,rgba(255,255,255,.7),transparent)}
 .head h2{font-size:clamp(28px,4.2vw,44px);margin-bottom:18px}
 .head p{font-style:italic;color:var(--muted);font-size:16.5px;line-height:1.7}
 
 .bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(210px,auto);gap:14px}
-.b-coach{grid-column:span 4;grid-row:span 2;padding:0;display:flex;flex-direction:column;justify-content:flex-end;min-height:440px}
-.b-coach .photo{position:absolute;inset:0;border-radius:0;border:0;box-shadow:none}
-.b-coach .photo::after{background:linear-gradient(180deg,rgba(8,8,8,.1) 20%,rgba(8,8,8,.92))}
-.b-coach .b-in{position:relative;z-index:2;padding:34px}
+.b-coach{grid-column:span 4;grid-row:span 2;padding:0;display:flex;flex-direction:column}
+.b-coach .photo{flex:1;min-height:240px;border-radius:0;border:0;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:none}
+.b-coach .b-in{padding:28px 32px 32px}
 .b-weeks{grid-column:span 2;display:flex;flex-direction:column;justify-content:space-between}
 .b-weeks .big{font-size:96px;font-weight:200;font-style:italic;letter-spacing:-.06em;line-height:.85;color:#fff}
 .b-book{grid-column:span 2}
@@ -367,7 +365,8 @@ section{padding:120px 0;position:relative}
   border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);margin-bottom:18px}
 @media(max-width:900px){
   .bento{grid-template-columns:1fr 1fr}
-  .b-coach{grid-column:span 2;grid-row:auto;min-height:420px}
+  .b-coach{grid-column:span 2;grid-row:auto}
+  .b-coach .photo{flex:none;aspect-ratio:16/9;min-height:0}
   .b-weeks,.b-book{grid-column:span 1}
   .b-qa,.b-acc{grid-column:span 2}
 }
@@ -422,11 +421,8 @@ section{padding:120px 0;position:relative}
 
 /* ---------- final ---------- */
 .final{padding:0;overflow:hidden}
-.final-bg{position:absolute;inset:0;z-index:-1}
-.final-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.3)}
-.final-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#050505 0%,rgba(5,5,5,.5) 35%,rgba(5,5,5,.7) 70%,#080808 100%)}
-.final-in{text-align:center;padding:160px 22px}
-@media(max-width:700px){.final-in{padding:104px 22px}}
+.final-in{text-align:center;padding:140px 22px}
+@media(max-width:700px){.final-in{padding:96px 22px}}
 .final h2{font-size:clamp(30px,4.6vw,50px);margin-bottom:18px}
 .final-sub{font-style:italic;color:#b5b5b5;font-size:16.5px;max-width:560px;margin:0 auto 36px;line-height:1.7}
 .final .cta-note{display:block;margin-top:14px}
@@ -492,9 +488,9 @@ footer{padding:38px 0;background:var(--bg)}
 <!-- ================= HERO ================= -->
 <section class="hero band band-glow" id="top">
   <div class="wrap reveal">
-    <span class="kicker"><i></i>Performance Alchemy</span>
-    <h1>Income Ceiling<em>Breakthrough</em></h1>
-    <p class="hero-sub">Break the cycle of pressure-driven performance. Build the self-trust and execution system to pursue your next income level.</p>
+    <span class="kicker"><i></i>Performance Alchemy · Income Ceiling Breakthrough</span>
+    <h1>Stop performing under pressure.<em>Start executing by choice.</em></h1>
+    <p class="hero-sub">A 7-week 1:1 coaching programme for high performers who know exactly what to do next, but don't do it consistently. Build the self-trust and execution system to reach your next income level, without waiting for a deadline to force you.</p>
     <div class="hero-cta">
       <a class="btn btn-solid" data-cal>Book Your Call <span class="arr">→</span></a>
       <span class="cta-note">7-week 1:1 coaching programme · start with a 45-minute call</span>
@@ -502,6 +498,7 @@ footer{padding:38px 0;background:var(--bg)}
   </div>
 
   <div class="cine reveal">
+    <!-- IMAGE 1 · wide hero (21:9, ~1800px wide): Shiva on a 1:1 Google Meet call with a client, or Shiva at his desk mid-work. Natural light, real setting. -->
     <div class="photo">
       <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1800&q=80" alt="A high performer working at a laptop">
     </div>
@@ -512,6 +509,7 @@ footer{padding:38px 0;background:var(--bg)}
 <!-- ================= STATEMENT ================= -->
 <section class="band">
   <div class="wrap statement reveal">
+    <span class="label center">Who it's for</span>
     <p>A 7-week personal coaching programme for <b>high performers</b> who know they're capable of more, but aren't consistently taking the actions that could get them there.</p>
     <p>You've already proven you can work hard, solve problems and achieve results. <b>But when it comes to your next level, something keeps repeating.</b></p>
   </div>
@@ -549,6 +547,7 @@ footer{padding:38px 0;background:var(--bg)}
       <span class="label">What we'll work on</span>
       <h2>Five frameworks for <span class="hl">consistent execution</span></h2>
       <p>Each one targets a different point where your next level gets stalled, from the identity that pulls you back to the hour you lose to busywork.</p>
+      <!-- IMAGE 2 · frameworks (4:3): a page or worksheet from the Self-Mastery Playbook, or a hand-drawn Focus Funnel / Identity Thermostat diagram on paper or a whiteboard. -->
       <div class="photo">
         <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80" alt="Hand writing a plan in a notebook" loading="lazy">
       </div>
@@ -606,6 +605,7 @@ footer{padding:38px 0;background:var(--bg)}
 
     <div class="bento">
       <div class="card b-coach reveal">
+        <!-- IMAGE 3 · 1:1 coaching (landscape): a screenshot of a real Google Meet session with Shiva (blur the client's face/name if needed). -->
         <div class="photo">
           <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Two people working through a plan together" loading="lazy">
         </div>
@@ -648,6 +648,7 @@ footer{padding:38px 0;background:var(--bg)}
 <!-- ================= OUTCOMES ================= -->
 <section class="band band-glow" id="outcomes">
   <div class="wrap outcomes">
+    <!-- IMAGE 4 · outcomes (tall/portrait): a client win (screenshot of a message or result, with permission) or a calm, confident photo of Shiva. -->
     <div class="photo reveal">
       <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80" alt="Person sitting calm and focused at sunrise" loading="lazy">
     </div>
@@ -669,7 +670,7 @@ footer{padding:38px 0;background:var(--bg)}
 <!-- ================= COACH ================= -->
 <section class="band band-flat">
   <div class="wrap coach reveal">
-    <!-- Swap in a photo of Shiva: add <img src="assets/shiva.jpg" alt="Shiva"> inside the avatar -->
+    <!-- IMAGE 5 · coach headshot (square): a clear, friendly headshot of Shiva. Add <img src="assets/shiva.jpg" alt="Shiva"> inside the avatar. -->
     <div class="avatar">S</div>
     <div>
       <span class="label">Your coach</span>
@@ -697,12 +698,9 @@ footer{padding:38px 0;background:var(--bg)}
 </section>
 
 <!-- ================= FINAL ================= -->
-<section class="final band" id="book">
-  <div class="final-bg" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1600&q=70" alt="" loading="lazy">
-  </div>
+<section class="final band band-glow" id="book">
   <div class="wrap final-in reveal">
-    <span class="label">Your next level</span>
+    <span class="label center">Your next level</span>
     <h2>Stop waiting for pressure. <span class="hl">Start trusting yourself to act.</span></h2>
     <p class="final-sub">Book a 45-minute call to talk through your pattern, your income goal and whether Income Ceiling Breakthrough is right for you.</p>
     <a class="btn btn-solid" data-cal>Book Your Call <span class="arr">→</span></a>
