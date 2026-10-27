@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Self Mastery with Shiva</title>
-<meta name="description" content="Shiva has helped 100+ founders break their income ceilings by fixing the self first: dopamine rewiring, beating procrastination and mental rewiring. Book a call to find your ceiling.">
+<title>Income Ceiling Breakthrough</title>
+<meta name="description" content="Performance Alchemy: Income Ceiling Breakthrough. A 7-week 1:1 coaching programme for high performers who want to stop relying on pressure and build the self-trust and execution system to pursue their next income level.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#080808;
-  --surface:#0f0f0f;
   --white:#f5f5f5;
   --muted:#8a8a8a;
   --dim:#6a6a6a;
@@ -19,7 +18,7 @@
   --line-2:#343434;
   --accent:#ffffff;
   --accent-ink:#080808;
-  --maxw:1080px;
+  --maxw:1120px;
   --nav-max:1180px;
 
   /* liquid glass */
@@ -57,40 +56,30 @@ body > *{position:relative;z-index:2}
 ::-webkit-scrollbar-thumb:hover{background:#3d3d3d}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-button{font-family:inherit}
 .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
 h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;line-height:1.15}
 p{margin:0}
 
 /* editorial italic voice — light weight, generous line height */
-h1,h2{font-style:italic;font-weight:400;letter-spacing:-.02em;line-height:1.22;color:#a5a5a5}
+h2{font-style:italic;font-weight:400;letter-spacing:-.02em;line-height:1.24;color:#a5a5a5}
 h3{font-style:italic;font-weight:500;letter-spacing:-.015em}
-.hl{color:var(--accent)}
-h1 .hl,h2 .hl{
+h2 .hl{
   font-weight:500;color:#fff;
   background:linear-gradient(180deg,#ffffff 30%,#cfcfcf);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
-h1 u,h2 u{text-decoration:none;position:relative;color:#fff;white-space:nowrap}
-@media(max-width:560px){h1 u,h2 u{white-space:normal;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.16em;text-decoration-color:rgba(255,255,255,.85)}h1 u::after,h2 u::after{display:none}}
-h1 u::after,h2 u::after{
-  content:"";position:absolute;left:0;right:0;bottom:.06em;height:1.5px;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.85) 12%,rgba(255,255,255,.85) 88%,transparent);
+.label{
+  display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);font-style:italic;margin-bottom:20px;
 }
-
-.eyebrow,.section-label{
-  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--muted);
-}
-.section-label{font-style:italic;margin-bottom:18px}
-.eyebrow{font-style:italic;font-weight:400;text-transform:none;letter-spacing:.005em;font-size:15px;color:#8f8f8f}
+.label::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.7),transparent)}
 
 /* ---------- buttons ---------- */
 .btn{
   position:relative;overflow:hidden;isolation:isolate;
   display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;
   border:0;border-radius:8px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  padding:17px 44px;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease),background .3s var(--ease);
+  padding:17px 44px;transition:transform .3s var(--ease),box-shadow .3s var(--ease);
 }
 .btn::after{
   content:"";position:absolute;inset:0;z-index:-1;transform:translateX(-130%) skewX(-18deg);
@@ -104,16 +93,10 @@ h1 u::after,h2 u::after{
 }
 .btn-solid:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(255,255,255,.62),0 1px 0 rgba(255,255,255,1) inset}
 .btn-solid:active{transform:translateY(0)}
-.btn-line{
-  background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
-  color:var(--white);border:1px solid var(--line-2);
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-}
-.btn-line:hover{border-color:rgba(255,255,255,.6);transform:translateY(-2px)}
-.btn-line::after{background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent)}
 .btn .arr{font-size:15px;letter-spacing:0;transition:transform .3s var(--ease)}
 .btn:hover .arr{transform:translateX(3px)}
 @media(max-width:520px){.btn:not(.btn-nav){padding:16px 26px;width:100%}}
+.cta-note{font-style:italic;font-size:13px;color:var(--muted)}
 
 /* ---------- topbar : liquid glass ---------- */
 .topbar{
@@ -196,7 +179,7 @@ h1 u::after,h2 u::after{
 }
 .nav-ind.on{opacity:1}
 .btn-nav{flex:none;z-index:2;padding:15px 32px;font-size:11.5px;letter-spacing:.13em;border-radius:999px}
-@media(max-width:860px){
+@media(max-width:940px){
   .glass-nav{padding:10px 10px 10px 20px;justify-content:space-between}
   .nav-links{display:none}
 }
@@ -213,135 +196,13 @@ h1 u::after,h2 u::after{
   border:1px solid rgba(255,255,255,.12);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 50px 90px -50px #000;
 }
-.photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.9);transition:filter .8s var(--ease),transform 1.2s var(--ease)}
-.photo:hover img{filter:grayscale(.35) contrast(1.04) brightness(.95);transform:scale(1.03)}
-.photo::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,transparent 55%,rgba(8,8,8,.55));
-}
-/* if an image can't load, the frame shows its initial instead of a broken icon */
-.photo.broken img{display:none}
-.photo .fallback{position:absolute;inset:0;display:none;place-items:center;font-size:72px;font-weight:800;font-style:italic;color:#fff}
-.photo.broken .fallback{display:grid}
-.photo-cap{
-  position:absolute;left:16px;bottom:14px;z-index:2;font-style:italic;font-size:12.5px;color:#cfcfcf;
-}
+.photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.85);transition:filter .8s var(--ease),transform 1.2s var(--ease)}
+.photo:hover img{filter:grayscale(.35) contrast(1.04) brightness(.92);transform:scale(1.03)}
+.photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 50%,rgba(8,8,8,.6))}
+/* if an image can't load, the frame stays a clean glass panel instead of a broken icon */
+.photo.broken img{visibility:hidden}
 
-/* floating glass chips */
-.chip{
-  position:absolute;z-index:5;display:flex;align-items:center;gap:10px;padding:11px 16px;border-radius:14px;
-  font-size:12.5px;font-style:italic;color:#d6d6d6;white-space:nowrap;
-  background:linear-gradient(180deg,rgba(30,30,30,.55),rgba(14,14,14,.35));
-  border:1px solid rgba(255,255,255,.16);
-  backdrop-filter:blur(18px) saturate(170%);-webkit-backdrop-filter:blur(18px) saturate(170%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 20px 40px -20px #000;
-  animation:float 6s ease-in-out infinite;
-}
-.chip b{font-style:normal;color:#fff;font-weight:800}
-@keyframes float{0%,100%{translate:0 0}50%{translate:0 -10px}}
-
-/* ---------- hero ---------- */
-.hero{padding:170px 0 110px;position:relative;overflow:hidden}
-@media(max-width:600px){.hero{padding:120px 0 70px}}
-.hero::before{
-  content:"";position:absolute;top:-360px;left:50%;transform:translateX(-50%);
-  width:1000px;height:760px;border-radius:50%;
-  background:radial-gradient(circle,rgba(255,255,255,.09),transparent 62%);
-  filter:blur(34px);pointer-events:none;
-}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-.hero h1{font-size:clamp(32px,4.6vw,52px);margin:20px 0 24px;line-height:1.22}
-.hero-sub{font-style:italic;color:var(--muted);font-size:clamp(15px,1.8vw,17px);max-width:520px;line-height:1.7}
-.hero-cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:36px}
-.cta-note{font-style:italic;font-size:13px;color:var(--muted)}
-.hero-media{position:relative}
-.hero-media .photo{aspect-ratio:4/5}
-.hero-media .chip-1{top:9%;left:-34px;animation-delay:-2s}
-.hero-media .chip-2{bottom:18%;right:-26px;animation-delay:-4s}
-.hero-media .chip-3{bottom:-18px;left:12%;animation-delay:-1s}
-@media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr;gap:48px;text-align:center}
-  .hero-sub{margin:0 auto}
-  .hero-cta{justify-content:center}
-  .hero-media{max-width:420px;margin:0 auto;width:100%}
-}
-@media(max-width:600px){
-  .chip{font-size:11px;padding:9px 12px}
-  .hero-media .chip-1{left:-6px}.hero-media .chip-2{right:-6px}.hero-media .chip-3{display:none}
-}
-
-/* ---------- sections ---------- */
-section{padding:118px 0;position:relative}
-@media(max-width:700px){section{padding:80px 0}}
-.band{position:relative;isolation:isolate}
-.band-glow::after{
-  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-  background:radial-gradient(72% 62% at 50% 46%,rgba(132,104,232,.14),transparent 72%);
-}
-.band-flat{background:#050505}
-.band-flat::before,footer::before{
-  content:"";position:absolute;top:0;left:0;right:0;height:1px;z-index:3;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.20),transparent);
-}
-.sec-head{text-align:center;max-width:700px;margin:0 auto 56px}
-.sec-head h2{font-size:clamp(27px,4.3vw,44px);margin-bottom:20px;line-height:1.26}
-.sec-head p{font-style:italic;color:var(--muted);font-size:16.5px;line-height:1.7}
-
-/* ---------- proof strip ---------- */
-.proof{border-block:1px solid var(--line);padding:0}
-.proof-in{display:grid;grid-template-columns:repeat(4,1fr)}
-.proof-stat{padding:40px 20px;text-align:center;border-left:1px solid var(--line)}
-.proof-stat:first-child{border-left:none}
-.proof-num{display:block;font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.04em;color:#fff}
-.proof-label{display:block;font-style:italic;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:700;margin-top:9px}
-@media(max-width:780px){
-  .proof-in{grid-template-columns:repeat(2,1fr)}
-  .proof-stat:nth-child(3){border-left:none}
-  .proof-stat:nth-child(n+3){border-top:1px solid var(--line)}
-}
-
-/* ---------- split: image beside text ---------- */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.split.flip .split-media{order:2}
-.split-media .photo{aspect-ratio:5/6}
-.split h2{font-size:clamp(27px,3.8vw,40px);margin-bottom:22px;line-height:1.26}
-.split .lead{font-style:italic;color:#c2c2c2;font-size:17px;line-height:1.75}
-.split .lead + .lead{margin-top:16px;color:var(--muted);font-size:15.5px}
-@media(max-width:860px){
-  .split{grid-template-columns:1fr;gap:40px}
-  .split.flip .split-media{order:0}
-  .split-media{max-width:460px;margin:0 auto;width:100%}
-  .split-media .photo{aspect-ratio:4/3}
-}
-
-.ticks{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px}
-.ticks li{display:flex;gap:14px;align-items:flex-start;font-style:italic;color:#c4c4c4;font-size:15.5px;line-height:1.6}
-.ticks li::before{
-  content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:7px;
-  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.04));
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.3);
-}
-.ticks.x li::before{
-  background:rgba(255,255,255,.04) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23bbb' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center/11px no-repeat;
-}
-.ticks.ok li::before{
-  background:rgba(255,255,255,.08) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat;
-}
-
-.sig{margin-top:22px;font-style:italic;font-size:22px;color:#fff;font-weight:300}
-
-/* ---------- pillars: image cards ---------- */
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:900px){.pillars{grid-template-columns:1fr;max-width:520px;margin:0 auto}}
-.pillar{padding:0;display:flex;flex-direction:column}
-.pillar .photo{border-radius:0;border:0;border-bottom:1px solid rgba(255,255,255,.08);aspect-ratio:16/11;box-shadow:none}
-.pillar-body{padding:26px 28px 30px}
-.pillar-num{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:700}
-.pillar h3{font-size:21px;color:#fff;margin:10px 0 10px}
-.pillar p{font-style:italic;color:var(--muted);font-size:14.8px;line-height:1.65}
-
-/* ---------- cards ---------- */
+/* ---------- glass card ---------- */
 .card{
   position:relative;overflow:hidden;border-radius:20px;padding:30px;
   background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.012));
@@ -350,7 +211,7 @@ section{padding:118px 0;position:relative}
   box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 20px 40px -32px #000;
   transition:border-color .35s var(--ease),transform .35s var(--ease);
 }
-.card:hover{border-color:rgba(255,255,255,.2);transform:translateY(-4px)}
+.card:hover{border-color:rgba(255,255,255,.2)}
 .card::before{
   content:"";position:absolute;inset:0;pointer-events:none;opacity:0;z-index:0;
   transition:opacity .4s var(--ease);
@@ -359,42 +220,195 @@ section{padding:118px 0;position:relative}
 .card:hover::before{opacity:1}
 .card > *{position:relative;z-index:1}
 
-/* ---------- laws grid ---------- */
-.laws{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
-@media(max-width:900px){.laws{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.laws{grid-template-columns:1fr}}
-.law{padding:22px 22px 24px;border-radius:16px}
-.law .ico{
-  display:inline-grid;place-items:center;min-width:34px;height:34px;padding:0 9px;border-radius:10px;
-  font-size:12px;font-weight:800;font-style:italic;color:#fff;
+/* ---------- sections ---------- */
+section{padding:120px 0;position:relative}
+@media(max-width:700px){section{padding:84px 0}}
+.band{position:relative;isolation:isolate}
+.band-glow::after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(72% 62% at 50% 46%,rgba(132,104,232,.13),transparent 72%);
+}
+.band-flat{background:#050505}
+.band-flat::before,footer::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;z-index:3;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.20),transparent);
+}
+
+/* ---------- hero : centred title over a wide cinematic frame ---------- */
+.hero{padding:180px 0 0;text-align:center;overflow:hidden}
+@media(max-width:600px){.hero{padding:128px 0 0}}
+.hero::before{
+  content:"";position:absolute;top:-360px;left:50%;transform:translateX(-50%);
+  width:1000px;height:760px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.09),transparent 62%);
+  filter:blur(34px);pointer-events:none;
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border-radius:999px;
+  font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#cfcfcf;
+  background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.2);
+}
+.kicker i{width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff}
+.hero h1{
+  margin:28px auto 26px;font-size:clamp(42px,8.4vw,104px);line-height:.98;letter-spacing:-.045em;
+  font-weight:800;color:#fff;
+}
+.hero h1 em{
+  display:block;font-style:italic;font-weight:200;letter-spacing:-.04em;color:#a5a5a5;
+}
+.hero-sub{font-style:italic;color:#b5b5b5;font-size:clamp(16px,2vw,19px);max-width:640px;margin:0 auto;line-height:1.65}
+.hero-cta{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:38px}
+
+.cine{position:relative;margin:76px auto 0;max-width:1180px;padding:0 22px}
+.cine .photo{aspect-ratio:21/9;border-radius:26px}
+@media(max-width:700px){.cine{margin-top:54px}.cine .photo{aspect-ratio:4/3}}
+.cine-quote{
+  position:absolute;left:58px;bottom:36px;z-index:3;max-width:440px;text-align:left;
+  padding:22px 26px;border-radius:18px;
+  background:linear-gradient(180deg,rgba(30,30,30,.55),rgba(14,14,14,.4));
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(18px) saturate(170%);-webkit-backdrop-filter:blur(18px) saturate(170%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 20px 40px -20px #000;
+  font-style:italic;font-size:17px;line-height:1.5;color:#e4e4e4;
+}
+.cine-quote b{color:#fff;font-weight:600}
+@media(max-width:700px){.cine-quote{position:relative;left:auto;bottom:auto;margin:-60px 14px 0;max-width:none;font-size:15.5px}}
+
+/* ---------- statement ---------- */
+.statement{max-width:900px;margin:0 auto;text-align:center}
+.statement p{font-style:italic;font-weight:300;font-size:clamp(22px,3.2vw,34px);line-height:1.4;color:#8f8f8f;letter-spacing:-.015em}
+.statement p b{font-weight:500;color:#fff}
+.statement p + p{margin-top:26px}
+
+/* ---------- the pattern : loop ---------- */
+.pattern{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+@media(max-width:900px){.pattern{grid-template-columns:1fr;gap:56px}}
+.pattern h2{font-size:clamp(28px,3.8vw,42px);margin-bottom:22px}
+.pattern .lead{font-style:italic;color:#c2c2c2;font-size:17px;line-height:1.75}
+.pattern .lead + .lead{margin-top:16px;color:var(--muted);font-size:15.5px}
+.pattern .punch{margin-top:28px;padding-left:18px;border-left:2px solid rgba(255,255,255,.7);font-style:italic;font-size:19px;color:#fff;line-height:1.5}
+
+.loop{position:relative;width:min(440px,100%);aspect-ratio:1;margin:0 auto}
+.loop svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.loop .ring{fill:none;stroke:rgba(255,255,255,.14);stroke-width:1.2;stroke-dasharray:3 7}
+.loop .ring-run{fill:none;stroke:rgba(255,255,255,.75);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:60 900;animation:orbit 7s linear infinite}
+@keyframes orbit{to{stroke-dashoffset:-955}}
+.loop-core{position:absolute;inset:32%;display:grid;place-items:center;text-align:center;border-radius:50%;
+  font-style:italic;font-size:13px;color:var(--muted);line-height:1.4;
+  background:radial-gradient(circle,rgba(255,255,255,.06),transparent 70%)}
+.loop-core b{display:block;font-style:normal;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:6px}
+.node{
+  position:absolute;width:46%;padding:14px 16px;border-radius:14px;text-align:center;
+  font-style:italic;font-size:13.5px;line-height:1.4;color:#d6d6d6;
+  background:linear-gradient(180deg,rgba(30,30,30,.7),rgba(14,14,14,.6));
+  border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 20px 40px -24px #000;
+  transform:translate(-50%,-50%);
+}
+.node b{display:block;font-style:normal;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.node-1{left:50%;top:7%}
+.node-2{left:93%;top:50%}
+.node-3{left:50%;top:93%}
+.node-4{left:7%;top:50%}
+@media(max-width:560px){
+  .loop{aspect-ratio:auto;display:grid;gap:10px}
+  .loop svg,.loop-core{display:none}
+  .node{position:relative;left:auto;top:auto;width:auto;transform:none;text-align:left}
+  .node:not(:last-child)::after{content:"↓";position:absolute;left:50%;bottom:-17px;transform:translateX(-50%);font-style:normal;color:var(--dim);font-size:12px}
+  .node:last-child::after{content:"↺ and back to the start";display:block;margin-top:8px;font-size:11px;color:var(--dim)}
+}
+
+/* ---------- the work : sticky column + modules ---------- */
+.work{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+@media(max-width:900px){.work{grid-template-columns:1fr;gap:44px}}
+.work-side{position:sticky;top:120px}
+@media(max-width:900px){.work-side{position:static}}
+.work-side h2{font-size:clamp(28px,3.8vw,42px);margin-bottom:20px}
+.work-side p{font-style:italic;color:var(--muted);font-size:16px;line-height:1.7}
+.work-side .photo{aspect-ratio:4/3;margin-top:34px}
+@media(max-width:900px){.work-side .photo{display:none}}
+.modules{display:grid}
+.module{display:grid;grid-template-columns:88px 1fr;gap:22px;padding:34px 0;border-top:1px solid rgba(255,255,255,.08)}
+.module:last-child{border-bottom:1px solid rgba(255,255,255,.08)}
+.module .num{font-size:54px;font-weight:200;font-style:italic;letter-spacing:-.05em;line-height:.9;color:rgba(255,255,255,.28);transition:color .5s var(--ease)}
+.module:hover .num{color:#fff}
+.module h3{font-size:23px;color:#fff;margin-bottom:12px}
+.module p{font-style:italic;color:var(--muted);font-size:15.5px;line-height:1.7}
+.module .eg{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.module .eg span{font-style:italic;font-size:12.5px;color:#bdbdbd;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+@media(max-width:560px){.module{grid-template-columns:1fr;gap:10px;padding:28px 0}.module .num{font-size:40px}}
+
+/* ---------- the programme : bento ---------- */
+.head{max-width:720px;margin:0 auto 56px;text-align:center}
+.head .label::after{content:"";width:26px;height:1px;background:linear-gradient(270deg,rgba(255,255,255,.7),transparent)}
+.head h2{font-size:clamp(28px,4.2vw,44px);margin-bottom:18px}
+.head p{font-style:italic;color:var(--muted);font-size:16.5px;line-height:1.7}
+
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(210px,auto);gap:14px}
+.b-coach{grid-column:span 4;grid-row:span 2;padding:0;display:flex;flex-direction:column;justify-content:flex-end;min-height:440px}
+.b-coach .photo{position:absolute;inset:0;border-radius:0;border:0;box-shadow:none}
+.b-coach .photo::after{background:linear-gradient(180deg,rgba(8,8,8,.1) 20%,rgba(8,8,8,.92))}
+.b-coach .b-in{position:relative;z-index:2;padding:34px}
+.b-weeks{grid-column:span 2;display:flex;flex-direction:column;justify-content:space-between}
+.b-weeks .big{font-size:96px;font-weight:200;font-style:italic;letter-spacing:-.06em;line-height:.85;color:#fff}
+.b-book{grid-column:span 2}
+.b-qa{grid-column:span 3}
+.b-acc{grid-column:span 3}
+.bento .tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:700}
+.bento h3{font-size:21px;color:#fff;margin:12px 0 10px}
+.b-coach h3{font-size:clamp(24px,3vw,30px)}
+.bento p{font-style:italic;color:var(--muted);font-size:14.8px;line-height:1.65}
+.b-coach p{color:#c4c4c4;max-width:520px;font-size:15.5px}
+.ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;
+  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.04));
+  border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);margin-bottom:18px}
+@media(max-width:900px){
+  .bento{grid-template-columns:1fr 1fr}
+  .b-coach{grid-column:span 2;grid-row:auto;min-height:420px}
+  .b-weeks,.b-book{grid-column:span 1}
+  .b-qa,.b-acc{grid-column:span 2}
+}
+@media(max-width:560px){
+  .bento{grid-template-columns:1fr}
+  .b-coach,.b-weeks,.b-book,.b-qa,.b-acc{grid-column:auto}
+  .b-weeks .big{font-size:72px}
+}
+
+/* ---------- outcomes ---------- */
+.outcomes{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:stretch}
+@media(max-width:900px){.outcomes{grid-template-columns:1fr;gap:40px}}
+.outcomes .photo{min-height:100%}
+@media(max-width:900px){.outcomes .photo{aspect-ratio:16/10;min-height:0}}
+.outcomes h2{font-size:clamp(28px,3.8vw,42px);margin-bottom:30px}
+.olist{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:o}
+.olist li{
+  counter-increment:o;display:flex;gap:18px;align-items:center;padding:18px 22px;border-radius:16px;
+  border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.022);
+  font-style:italic;font-size:16px;color:#d4d4d4;line-height:1.5;
+  transition:border-color .35s var(--ease),background .35s var(--ease),transform .35s var(--ease);
+}
+.olist li:hover{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.045);transform:translateX(4px)}
+.olist li::before{
+  content:counter(o,decimal-leading-zero);flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;
+  font-size:12px;font-weight:800;color:#fff;
   background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.04));
   border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);
 }
-.law b{display:block;font-style:italic;font-weight:600;font-size:15.5px;color:#fff;margin:14px 0 6px;letter-spacing:-.01em}
-.law p{font-style:italic;color:var(--muted);font-size:13.8px;line-height:1.6}
+.outcomes .note{margin-top:22px;font-style:italic;font-size:13px;color:var(--dim)}
 
-/* ---------- call steps ---------- */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
-@media(max-width:860px){.steps{grid-template-columns:1fr;max-width:560px;margin:0 auto}}
-.step .n{font-size:44px;font-weight:200;font-style:italic;letter-spacing:-.04em;color:#fff;line-height:1}
-.step h3{font-size:19px;color:#fff;margin:18px 0 10px}
-.step p{font-style:italic;color:var(--muted);font-size:14.8px;line-height:1.65}
-.center-cta{text-align:center;margin-top:48px}
-.center-cta .cta-note{display:block;margin-top:14px}
-
-/* ---------- testimonials ---------- */
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media(max-width:940px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.testi-grid{grid-template-columns:1fr}}
-.testi-grid .card{display:flex;flex-direction:column;gap:16px}
-.testi-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
-.testi-who b{display:block;font-size:15.5px;font-weight:700;color:#fff}
-.testi-who span{font-style:italic;font-size:12.5px;color:var(--dim)}
-.testi-metric{text-align:right;flex:none}
-.testi-metric b{display:block;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#fff}
-.testi-metric span{display:block;font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--dim);font-weight:700;margin-top:3px}
-.testi-grid p{font-style:italic;font-size:14.8px;color:var(--muted);line-height:1.7}
-.stars{color:#fff;letter-spacing:3px;font-size:11px;opacity:.85;margin-top:auto}
+/* ---------- coach ---------- */
+.coach{max-width:820px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+@media(max-width:640px){.coach{grid-template-columns:1fr;text-align:center;gap:24px}}
+.avatar{width:132px;height:132px;border-radius:50%;margin:0 auto;display:grid;place-items:center;
+  font-size:52px;font-weight:800;font-style:italic;color:#fff;overflow:hidden;position:relative;
+  background:linear-gradient(158deg,rgba(255,255,255,.16),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.16);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 30px 60px -30px #000}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.coach h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:14px}
+.coach p{font-style:italic;color:var(--muted);font-size:15.5px;line-height:1.75}
 
 /* ---------- faq ---------- */
 .faq{max-width:760px;margin:0 auto;display:grid;gap:10px}
@@ -409,13 +423,14 @@ section{padding:118px 0;position:relative}
 /* ---------- final ---------- */
 .final{padding:0;overflow:hidden}
 .final-bg{position:absolute;inset:0;z-index:-1}
-.final-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.32)}
-.final-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#050505 0%,rgba(5,5,5,.55) 35%,rgba(5,5,5,.7) 70%,#080808 100%)}
-.final-in{text-align:center;padding:150px 22px}
-@media(max-width:700px){.final-in{padding:100px 22px}}
-.final h2{font-size:clamp(28px,4.3vw,46px);margin-bottom:18px}
-.final-sub{font-style:italic;color:#b5b5b5;font-size:16.5px;max-width:540px;margin:0 auto 36px;line-height:1.7}
-.disclaimer{margin-top:34px;font-size:11.5px;color:var(--dim);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.65}
+.final-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.3)}
+.final-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#050505 0%,rgba(5,5,5,.5) 35%,rgba(5,5,5,.7) 70%,#080808 100%)}
+.final-in{text-align:center;padding:160px 22px}
+@media(max-width:700px){.final-in{padding:104px 22px}}
+.final h2{font-size:clamp(30px,4.6vw,50px);margin-bottom:18px}
+.final-sub{font-style:italic;color:#b5b5b5;font-size:16.5px;max-width:560px;margin:0 auto 36px;line-height:1.7}
+.final .cta-note{display:block;margin-top:14px}
+.disclaimer{margin-top:40px;font-size:11.5px;color:var(--dim);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.65}
 
 footer{padding:38px 0;background:var(--bg)}
 .foot-in{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
@@ -458,14 +473,14 @@ footer{padding:38px 0;background:var(--bg)}
       <span class="glass-nav-sheen" aria-hidden="true"></span>
       <span class="glass-nav-glow" aria-hidden="true"></span>
 
-      <a class="logo" href="#top"><span class="logo-mark">S</span> Shiva<span class="sub">Self Mastery</span></a>
+      <a class="logo" href="#top"><span class="logo-mark">S</span> Shiva<span class="sub">Performance Alchemy</span></a>
 
       <div class="nav-links" id="navLinks">
         <span class="nav-ind" id="navInd" aria-hidden="true"></span>
-        <a href="#problem" data-sec="problem">The Problem</a>
-        <a href="#method" data-sec="method">The Method</a>
-        <a href="#about" data-sec="about">About</a>
-        <a href="#reviews" data-sec="reviews">Results</a>
+        <a href="#pattern" data-sec="pattern">The Pattern</a>
+        <a href="#work" data-sec="work">The Work</a>
+        <a href="#programme" data-sec="programme">The Programme</a>
+        <a href="#outcomes" data-sec="outcomes">Outcomes</a>
         <a href="#faq" data-sec="faq">FAQ</a>
       </div>
 
@@ -476,227 +491,207 @@ footer{padding:38px 0;background:var(--bg)}
 
 <!-- ================= HERO ================= -->
 <section class="hero band band-glow" id="top">
-  <div class="wrap hero-grid">
+  <div class="wrap reveal">
+    <span class="kicker"><i></i>Performance Alchemy</span>
+    <h1>Income Ceiling<em>Breakthrough</em></h1>
+    <p class="hero-sub">Break the cycle of pressure-driven performance. Build the self-trust and execution system to pursue your next income level.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" data-cal>Book Your Call <span class="arr">→</span></a>
+      <span class="cta-note">7-week 1:1 coaching programme · start with a 45-minute call</span>
+    </div>
+  </div>
+
+  <div class="cine reveal">
+    <div class="photo">
+      <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1800&q=80" alt="A high performer working at a laptop">
+    </div>
+    <p class="cine-quote">"You know what needs to be done. <b>You just don't do it consistently.</b>"</p>
+  </div>
+</section>
+
+<!-- ================= STATEMENT ================= -->
+<section class="band">
+  <div class="wrap statement reveal">
+    <p>A 7-week personal coaching programme for <b>high performers</b> who know they're capable of more, but aren't consistently taking the actions that could get them there.</p>
+    <p>You've already proven you can work hard, solve problems and achieve results. <b>But when it comes to your next level, something keeps repeating.</b></p>
+  </div>
+</section>
+
+<!-- ================= THE PATTERN ================= -->
+<section class="band band-flat" id="pattern">
+  <div class="wrap pattern">
     <div class="reveal">
-      <span class="eyebrow">For founders who know they're capable of more...</span>
-      <h1>Your income can't outgrow <span class="hl">the person earning it</span>. Let's <u>break the ceiling</u>.</h1>
-      <p class="hero-sub">I've helped 100+ founders rewire their dopamine, kill procrastination and rewrite the beliefs that quietly cap what they earn. On a 1:1 call, we'll find your ceiling and the exact rules to break it.</p>
-      <div class="hero-cta">
-        <a class="btn btn-solid" data-cal>Book Your Call <span class="arr">→</span></a>
-        <span class="cta-note">45-minute 1:1 with Shiva · pick any open slot</span>
-      </div>
+      <span class="label">The pattern</span>
+      <h2>Pressure gets you moving. <span class="hl">Comfort sends you back.</span></h2>
+      <p class="lead">You work well when deadlines are close or pressure builds. When things become comfortable, you return to familiar routines.</p>
+      <p class="lead">You research, plan, organise and stay busy, while the uncomfortable actions that could create new opportunities get pushed aside.</p>
+      <p class="punch">Income Ceiling Breakthrough helps you change that pattern, without depending on motivation or waiting for panic to force you into action.</p>
     </div>
 
-    <div class="hero-media reveal">
-      <!-- Swap in a photo of Shiva: replace the src below with e.g. assets/shiva.jpg -->
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80" alt="A founder working focused at a laptop">
-        <span class="fallback">S</span>
-      </div>
-      <div class="chip chip-1"><b>100+</b> founders coached</div>
-      <div class="chip chip-2"><b>2.1x</b> avg. revenue in 90 days</div>
-      <div class="chip chip-3">Dopamine reset <b>✓</b></div>
+    <div class="loop reveal" aria-label="The pressure loop: pressure builds, you perform, comfort returns, you hide in busywork, and the loop repeats">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle class="ring" cx="50" cy="50" r="43"/>
+        <circle class="ring-run" cx="50" cy="50" r="43" pathLength="955" transform="rotate(-90 50 50)"/>
+      </svg>
+      <div class="loop-core"><div><b>The loop</b>repeats until<br>you break it</div></div>
+      <div class="node node-1"><b>01</b>Deadline or pressure builds</div>
+      <div class="node node-2"><b>02</b>You perform, and get results</div>
+      <div class="node node-3"><b>03</b>Things get comfortable again</div>
+      <div class="node node-4"><b>04</b>Busywork replaces the hard actions</div>
     </div>
   </div>
 </section>
 
-<!-- ================= PROOF ================= -->
-<div class="proof band band-flat">
-  <div class="wrap proof-in">
-    <div class="proof-stat reveal"><span class="proof-num">100+</span><span class="proof-label">Founders broke their ceiling</span></div>
-    <div class="proof-stat reveal"><span class="proof-num">2.1x</span><span class="proof-label">Avg. client revenue, 90 days</span></div>
-    <div class="proof-stat reveal"><span class="proof-num">11 hrs</span><span class="proof-label">Avg. week reclaimed</span></div>
-    <div class="proof-stat reveal"><span class="proof-num">8</span><span class="proof-label">Laws, zero fluff</span></div>
-  </div>
-</div>
-
-<!-- ================= PROBLEM ================= -->
-<section class="band band-glow" id="problem">
-  <div class="wrap split">
-    <div class="split-media reveal">
+<!-- ================= THE WORK ================= -->
+<section class="band band-glow" id="work">
+  <div class="wrap work">
+    <div class="work-side reveal">
+      <span class="label">What we'll work on</span>
+      <h2>Five frameworks for <span class="hl">consistent execution</span></h2>
+      <p>Each one targets a different point where your next level gets stalled, from the identity that pulls you back to the hour you lose to busywork.</p>
       <div class="photo">
-        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80" alt="An open planner and notebook on a desk" loading="lazy">
-        <span class="fallback">01</span>
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80" alt="Hand writing a plan in a notebook" loading="lazy">
       </div>
     </div>
-    <div class="reveal">
-      <span class="section-label">The problem</span>
-      <h2>You don't have an effort problem. You have a <span class="hl">self problem</span>.</h2>
-      <p class="lead">Almost every founder I work with is already working hard. The work isn't what's capping them. It's the person doing it.</p>
-      <ul class="ticks x">
-        <li>You lose hours to scrolling, notifications and busywork, then wonder where the day went.</li>
-        <li>The task that would move the needle sits on your list for weeks.</li>
-        <li>Your revenue keeps hitting the same number, no matter how much harder you push.</li>
-        <li>You second-guess decisions you should have made in a day.</li>
-      </ul>
+
+    <div class="modules">
+      <div class="module reveal">
+        <span class="num">01</span>
+        <div>
+          <h3>Identity Thermostat</h3>
+          <p>Identify the habits, beliefs and reactions that keep pulling you back into familiar patterns. Understand how your current self-image influences your actions, and begin aligning your behaviour with your next level of responsibility.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <span class="num">02</span>
+        <div>
+          <h3>Imagination Protocols</h3>
+          <p>Mentally rehearse how you want to respond before difficult moments arrive, and practise the moments you've been avoiding.</p>
+          <div class="eg"><span>The sales conversation</span><span>Submitting the proposal</span><span>Asking for the promotion</span><span>The task you keep avoiding</span></div>
+        </div>
+      </div>
+      <div class="module reveal">
+        <span class="num">03</span>
+        <div>
+          <h3>Execution Awareness</h3>
+          <p>Learn to recognise resistance as it happens. Notice when you're slipping into avoidance, work through the discomfort, and take the next useful action without waiting to feel motivated.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <span class="num">04</span>
+        <div>
+          <h3>Focus Flow Installation</h3>
+          <p>Build a repeatable way to direct your attention to one important task at a time. Use focused work sessions, clear finish lines and distraction management to turn intentions into completed work.</p>
+        </div>
+      </div>
+      <div class="module reveal">
+        <span class="num">05</span>
+        <div>
+          <h3>Focus Funnel</h3>
+          <p>Separate the actions that could advance your income goal from routine responsibilities, low-value busywork and distractions. Make deliberate decisions about where your time and attention go.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= METHOD ================= -->
-<section class="band band-flat" id="method">
+<!-- ================= THE PROGRAMME ================= -->
+<section class="band band-flat" id="programme">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="section-label">The method</span>
-      <h2>Three shifts that <span class="hl">break the ceiling</span></h2>
-      <p>Everything I do with clients comes back to these three. Fix them, and the income follows.</p>
+    <div class="head reveal">
+      <span class="label">Your 7-week experience</span>
+      <h2>Everything you need to <span class="hl">follow through</span></h2>
+      <p>Coaching, tools and accountability, built around your real work and your real income goal.</p>
     </div>
 
-    <div class="pillars">
-      <div class="card pillar reveal">
+    <div class="bento">
+      <div class="card b-coach reveal">
         <div class="photo">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Person sitting calmly at sunrise" loading="lazy">
-          <span class="fallback">01</span>
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Two people working through a plan together" loading="lazy">
         </div>
-        <div class="pillar-body">
-          <span class="pillar-num">Shift 01</span>
-          <h3>Dopamine Rewiring</h3>
-          <p>Reset the cheap-reward loop of scrolling and busywork, so deep work and progress become the things your brain actually craves.</p>
+        <div class="b-in">
+          <span class="tag">Core</span>
+          <h3>Personal 1:1 coaching sessions</h3>
+          <p>Work directly with me over Google Meet to identify your patterns, work through challenges and apply the frameworks to your real-life situations.</p>
         </div>
       </div>
-      <div class="card pillar reveal">
-        <div class="photo">
-          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Hand writing in a notebook" loading="lazy">
-          <span class="fallback">02</span>
-        </div>
-        <div class="pillar-body">
-          <span class="pillar-num">Shift 02</span>
-          <h3>Stop Procrastinating</h3>
-          <p>Find out why you avoid the work that matters most, then start it anyway with friction design, tiny starts and the no-zero-day rule.</p>
-        </div>
-      </div>
-      <div class="card pillar reveal">
-        <div class="photo">
-          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Person training in a gym" loading="lazy">
-          <span class="fallback">03</span>
-        </div>
-        <div class="pillar-body">
-          <span class="pillar-num">Shift 03</span>
-          <h3>Mental Rewiring</h3>
-          <p>Rewrite the beliefs about money, worth and ambition that quietly decide how much you allow yourself to earn.</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="sec-head reveal" style="margin:88px auto 32px">
-      <span class="section-label">The 8 laws</span>
-      <p>Underneath the three shifts sit the eight laws I use with every client.</p>
-    </div>
-    <div class="laws">
-      <div class="card law reveal"><span class="ico">01</span><b>The Law of the Ceiling</b><p>Your income can't outgrow your habits, identity and standards.</p></div>
-      <div class="card law reveal"><span class="ico">02</span><b>Dopamine Rewiring</b><p>Make progress the reward your brain chases.</p></div>
-      <div class="card law reveal"><span class="ico">03</span><b>Stop Procrastinating</b><p>Rules that get you started on the hard thing.</p></div>
-      <div class="card law reveal"><span class="ico">04</span><b>Mental Rewiring</b><p>Beliefs about money and worth, rewritten.</p></div>
-      <div class="card law reveal"><span class="ico">05</span><b>Mental Models</b><p>Thinking tools to decide faster and stop second-guessing.</p></div>
-      <div class="card law reveal"><span class="ico">06</span><b>The Law of Energy</b><p>Sleep, training and your first two hours. Output follows state.</p></div>
-      <div class="card law reveal"><span class="ico">07</span><b>The Law of Focus</b><p>Protect deep work and say no without guilt.</p></div>
-      <div class="card law reveal"><span class="ico">08</span><b>Daily Rhythm</b><p>The system that keeps every law running.</p></div>
+      <div class="card b-weeks reveal">
+        <span class="tag">Duration</span>
+        <div>
+          <div class="big">7</div>
+          <p>weeks of focused, personal coaching.</p>
+        </div>
+      </div>
+
+      <div class="card b-book reveal">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></div>
+        <h3>Self-Mastery Playbook</h3>
+        <p>Frameworks, exercises and protocols you use while working, not material to read and forget.</p>
+      </div>
+
+      <div class="card b-qa reveal">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Weekly Q&amp;A sessions</h3>
+        <p>Bring the questions, obstacles and situations you're facing, get guidance, and keep moving.</p>
+      </div>
+
+      <div class="card b-acc reveal">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Personal accountability</h3>
+        <p>Track the actions you commit to, review what actually happened, spot where you avoided execution, and set your next commitments.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section class="band band-glow" id="about">
-  <div class="wrap split flip">
-    <div class="split-media reveal">
-      <!-- Swap in a photo of Shiva: replace the src below with e.g. assets/shiva-portrait.jpg -->
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80" alt="Notebook and pen on a desk" loading="lazy">
-        <span class="fallback">S</span>
-      </div>
+<!-- ================= OUTCOMES ================= -->
+<section class="band band-glow" id="outcomes">
+  <div class="wrap outcomes">
+    <div class="photo reveal">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80" alt="Person sitting calm and focused at sunrise" loading="lazy">
     </div>
     <div class="reveal">
-      <span class="section-label">Who I am</span>
+      <span class="label">What you're working towards</span>
+      <h2>By the end of the programme, <span class="hl">the aim is for you to:</span></h2>
+      <ol class="olist">
+        <li>Execute important actions more consistently, without depending on motivation.</li>
+        <li>Stop using pressure as your primary trigger for performance.</li>
+        <li>Prioritise work that supports your income goal instead of hiding in busywork.</li>
+        <li>Act with greater confidence when outcomes are uncertain.</li>
+        <li>Build self-trust by following through on commitments.</li>
+        <li>Recognise and pursue opportunities you might previously have hesitated to take.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COACH ================= -->
+<section class="band band-flat">
+  <div class="wrap coach reveal">
+    <!-- Swap in a photo of Shiva: add <img src="assets/shiva.jpg" alt="Shiva"> inside the avatar -->
+    <div class="avatar">S</div>
+    <div>
+      <span class="label">Your coach</span>
       <h2>Hey, I'm <span class="hl">Shiva</span>.</h2>
-      <p class="lead">I've spent years working with founders, operators and solopreneurs, more than 100 of them so far. Almost none of them had an effort problem.</p>
-      <p class="lead">They had a brain hooked on cheap dopamine, chronic procrastination, beliefs that capped their income and decisions they kept putting off. Every client taught me something, and I've turned all of it into laws and rules: what I look for first, the patterns I see again and again, and exactly what changed people's results.</p>
-      <div class="sig">— Shiva</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= THE CALL ================= -->
-<section class="band band-flat" id="call">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="section-label">What happens on the call</span>
-      <h2>45 minutes. <span class="hl">Your ceiling, named.</span></h2>
-      <p>No pitch deck, no fluff. You'll leave knowing exactly what's holding you back.</p>
-    </div>
-    <div class="steps">
-      <div class="card step reveal">
-        <span class="n">01</span>
-        <h3>We find your ceiling</h3>
-        <p>We look at where your hours, energy and attention really go, and the habit or belief that's capping your income.</p>
-      </div>
-      <div class="card step reveal">
-        <span class="n">02</span>
-        <h3>You get your first rules</h3>
-        <p>I'll hand you the laws that fit your situation, so you can start changing things the same day.</p>
-      </div>
-      <div class="card step reveal">
-        <span class="n">03</span>
-        <h3>We map the next 90 days</h3>
-        <p>If it's a fit, we'll talk about working together. If not, you still leave with a clear plan.</p>
-      </div>
-    </div>
-    <div class="center-cta reveal">
-      <a class="btn btn-solid" data-cal>Pick a Time <span class="arr">→</span></a>
-      <span class="cta-note">Opens Shiva's calendar · takes 30 seconds to book</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= REVIEWS ================= -->
-<!-- Replace these with real client reviews before launch. -->
-<section class="band band-glow" id="reviews">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="section-label">Client results</span>
-      <h2>What happens when you <span class="hl">fix the self first</span></h2>
-    </div>
-    <div class="testi-grid">
-      <div class="card reveal">
-        <div class="testi-top">
-          <div class="testi-who"><b>Ananya R.</b><span>Brand consultant</span></div>
-          <div class="testi-metric"><b>Law 01</b><span>Changed everything</span></div>
-        </div>
-        <p>"The first call called me out. I'd been blaming the market for two years when the ceiling was my own habits. Uncomfortable, and exactly what I needed."</p>
-        <div class="stars">★★★★★</div>
-      </div>
-      <div class="card reveal">
-        <div class="testi-top">
-          <div class="testi-who"><b>Marcus K.</b><span>Agency founder</span></div>
-          <div class="testi-metric"><b>9 hrs</b><span>Freed in week 1</span></div>
-        </div>
-        <p>"The time audit alone was worth it. I was spending nine hours a week on work that didn't need me. Shiva saw it in the first twenty minutes."</p>
-        <div class="stars">★★★★★</div>
-      </div>
-      <div class="card reveal">
-        <div class="testi-top">
-          <div class="testi-who"><b>Priya N.</b><span>Solopreneur</span></div>
-          <div class="testi-metric"><b>6 weeks</b><span>Still consistent</span></div>
-        </div>
-        <p>"The dopamine reset was brutal for three days, then I got my focus back. Six weeks in, I have not missed a deep work block."</p>
-        <div class="stars">★★★★★</div>
-      </div>
+      <p>I work with high performers who don't have an effort problem. They have a follow-through problem. Over these seven weeks, I'll work with you directly on your patterns, your real situations and your next income level, until consistent execution stops being something you wait to feel.</p>
     </div>
   </div>
 </section>
 
 <!-- ================= FAQ ================= -->
-<section class="band band-flat" id="faq">
+<section class="band band-glow" id="faq">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="section-label">Questions</span>
+    <div class="head reveal">
+      <span class="label">Questions</span>
       <h2>Before you <span class="hl">book</span></h2>
     </div>
     <div class="faq reveal">
-      <details><summary>Who is this for?</summary><p>Founders, solopreneurs, operators and anyone ambitious who knows they're capable of more and suspects the thing holding them back is themselves.</p></details>
-      <details><summary>What happens after I book?</summary><p>You'll get a calendar invite and a confirmation email with the call link. Show up with an honest picture of where your time and energy go.</p></details>
-      <details><summary>Is this a sales call?</summary><p>It's a working call. We find your ceiling and give you rules you can use right away. If working together makes sense, we'll talk about it at the end, and only then.</p></details>
-      <details><summary>Is this just theory?</summary><p>No. Everything comes from real work with 100+ real clients, and you'll leave with specific changes to make the same day.</p></details>
-      <details><summary>What if none of the times work for me?</summary><p>New slots open every week. Check back on the calendar, or pick the closest time and mention your time zone in the booking notes.</p></details>
+      <details><summary>Who is this for?</summary><p>High performers who've already proven they can work hard and get results, but who rely on deadlines and pressure to act, and keep putting off the uncomfortable actions that would take them to their next income level.</p></details>
+      <details><summary>How does the programme run?</summary><p>Over seven weeks you get personal 1:1 coaching sessions on Google Meet, weekly Q&amp;A sessions, the Self-Mastery Playbook and personal accountability on the actions you commit to.</p></details>
+      <details><summary>What happens on the call?</summary><p>It's a 45-minute conversation about where you are, the pattern that keeps repeating and your next income goal. If the programme is a fit, we'll talk about joining. If not, you'll still leave with clarity on what's holding you back.</p></details>
+      <details><summary>Is this a motivation programme?</summary><p>No. The whole point is to stop depending on motivation or panic. You'll build a practical execution system and the self-trust that comes from following through.</p></details>
+      <details><summary>Are results guaranteed?</summary><p>No. The outcomes above are what the programme aims for. What you get out of it depends on the actions you take during and after the seven weeks.</p></details>
     </div>
   </div>
 </section>
@@ -704,27 +699,28 @@ footer{padding:38px 0;background:var(--bg)}
 <!-- ================= FINAL ================= -->
 <section class="final band" id="book">
   <div class="final-bg" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=70" alt="" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1600&q=70" alt="" loading="lazy">
   </div>
   <div class="wrap final-in reveal">
-    <span class="section-label">Your move</span>
-    <h2>Break the ceiling. <span class="hl">Start with yourself.</span></h2>
-    <p class="final-sub">The same laws that helped 100+ founders break their income ceilings, applied to you. Book your call and find out what's really holding you back.</p>
+    <span class="label">Your next level</span>
+    <h2>Stop waiting for pressure. <span class="hl">Start trusting yourself to act.</span></h2>
+    <p class="final-sub">Book a 45-minute call to talk through your pattern, your income goal and whether Income Ceiling Breakthrough is right for you.</p>
     <a class="btn btn-solid" data-cal>Book Your Call <span class="arr">→</span></a>
-    <p class="disclaimer">Results are not typical and are not a guarantee of earnings. Individual outcomes depend on effort, experience and circumstances. This is coaching and education, not financial, legal, medical or tax advice.</p>
+    <span class="cta-note">Opens Shiva's calendar · pick any open slot</span>
+    <p class="disclaimer">Results are not guaranteed and depend on your effort, experience and circumstances. This is coaching and education, not financial, legal, medical or tax advice.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot-in">
-    <a class="logo" href="#top"><span class="logo-mark">S</span> Shiva<span class="sub">Self Mastery</span></a>
+    <a class="logo" href="#top"><span class="logo-mark">S</span> Shiva<span class="sub">Performance Alchemy</span></a>
     <div class="foot-copy">© <span id="yr"></span> Shiva. All rights reserved.</div>
     <div class="foot-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Income Disclaimer</a></div>
   </div>
 </footer>
 
 <div class="ctabar" id="ctabar">
-  <div class="bb-t">Find your income ceiling<br><b>45-min call with Shiva</b></div>
+  <div class="bb-t">Income Ceiling Breakthrough<br><b>45-min call with Shiva</b></div>
   <a class="btn btn-solid" data-cal>Book</a>
 </div>
 
@@ -749,10 +745,10 @@ document.querySelectorAll('[data-cal]').forEach(function(a){
   a.rel = 'noopener';
 });
 
-/* broken image → show the frame's fallback initial instead */
+/* broken image → keep the glass frame, hide the broken icon */
 document.querySelectorAll('.photo img').forEach(function(img){
   function fail(){ img.closest('.photo').classList.add('broken'); }
-  if(img.complete && !img.naturalWidth) fail();
+  if(img.complete && !img.naturalWidth && img.loading !== 'lazy') fail();
   else img.addEventListener('error', fail);
 });
 
